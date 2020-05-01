@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript Progress Bar</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="myProgress">
+		<div id="myBar"></div>
+	</div>
+	<button onclick="run()">&#8635;</button>
+
+	<script>
+		function run(){
+			const myBar = document.getElementById('myBar');
+			var width = 0;
+			var timeInt = setInterval(frame, 30);
+
+			function frame(){
+				if (width >= 100) {
+					clearInterval(timeInt);
+				}else {
+					width++;
+					myBar.style.width = width + '%';
+					myBar.innerHTML = width + '%';
+				}
+			}
+	    }
+	</script>
+</body>
+</html>

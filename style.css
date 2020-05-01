@@ -1,0 +1,40 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column;
+}
+
+#myProgress {
+	width: 100%;
+	max-width: 700px;
+	background: #ddd;
+}
+#myBar {
+	width: 0%;
+	height: 40px;
+	line-height: 40px;
+	background: #0088FF;
+	text-align: center;
+	color: #fff;
+}
+
+button {
+	background: #0088FF;
+	display: block;
+	margin: 30px;
+	border: none;
+	outline: none;
+	padding: 10px;
+	border-radius: 10px;
+	color: #eee;
+}
+button:hover  {
+	opacity: .7;
+}
